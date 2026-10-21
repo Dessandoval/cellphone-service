@@ -8,13 +8,22 @@ public class CellPhone {
     private String phoneNumber;
     private String phoneOwner;
 
-    public CellPhone(){
-        this.serialNumber= 0;
-        this.model = "";
-        this.carrier = "";
-        this.phoneNumber = "";
-        this.phoneOwner = "";
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String phoneOwner) {
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.phoneOwner = phoneOwner;
     }
+
+//    public CellPhone(){
+//        this.serialNumber= 0;
+//        this.model = "";
+//        this.carrier = "";
+//        this.phoneNumber = "";
+//        this.phoneOwner = "";
+//    }
+
     public int getSerialNumber() {
         return this.serialNumber;
     }
